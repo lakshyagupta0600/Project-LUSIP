@@ -1,0 +1,321 @@
+ 
+#our-team-title
+{
+    
+    
+    font-weight: 300; 
+    margin-top: 2%;
+    margin-left: 37%;
+    font-size: 4vw;
+    color: #414141;
+}
+
+/* Header Styling*/
+#logo {
+	width: 140px;
+	height: 55px;
+	padding-left: 0.3rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.2rem;
+}
+
+#navbarBrand {
+	background: #292E49;
+	height: 80px;
+}
+
+#navbarHeader {
+	color: white;
+}
+
+#navbarHeader div:nth-of-type(2){
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+#navbarHeader div:nth-of-type(1){
+	font-family: "Anton", sans-serif;
+}
+
+.navbar {
+	padding: 0rem;
+	margin: 0;
+	font-size: 1rem;
+	background: #FFE58f;
+}
+
+.navbar .nav-item a {
+	font-family: "Georgia", serif;
+	color: #292E49;
+	font-weight:500;
+	transition: all 1.4s;
+}
+
+.navbar .nav-item a:before,
+.navbar .nav-item a:after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.navbar .nav-item a:before {
+	text-align: left;
+	content: '[';
+	margin-right: 3px;
+	opacity: 0;
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+.navbar .nav-item a:after {
+	text-align: left;
+	content: ']';
+	margin-left:3px;
+	opacity: 0;
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.navbar .nav-item a:hover {
+	color: white;
+	background: #292E49;
+	z-index: 1;
+}
+
+.navbar .nav-item a:hover:after {
+	z-index: -10;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+  	-moz-animation: fill 1s forwards;
+  	opacity: 1;
+  	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.navbar .nav-item a:hover:before {
+	z-index: -10;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+  	-moz-animation: fill 1s forwards;
+  	opacity: 1;
+  	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+/* Header Styling end*/
+
+/* Sidenav styling*/
+#mySidenav a {
+	color: #292E49;
+	position: fixed;
+	left: -120px;
+	transition: 0.3s;
+	padding: 8px;
+	margin-top: 35vh;
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+	font-size: 21px;
+	color: black;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #292E49;
+	text-align: right;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  background-color: #292E49;
+  color: white;
+}
+
+#facebook {
+	top: 0;
+}
+#instagram {
+	top: 8%;
+}
+#twitter {
+	top: 16%;
+}
+#linkedin {
+	top: 24%;
+}
+#youtube {
+	top: 32%;
+}
+
+#aboutsection {
+	font-family: "Open Sans Condensed", sans-serif;
+	font-size: 20px;
+    /* color: #292E49; */
+}
+/* Sidenav styling ends*/
+
+body {
+	background: #FFFFFF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+	height: 350px;
+	/*background-image: url("https://images.static-collegedunia.com/public/college_data/images/campusimage/14406563763.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+
+/*- - - - - - C O N T A C T - C A R D S - - - - - */
+
+#our-team-title
+{
+	margin-left: 39%;
+	margin-top: 1%;
+	font-size: 400%;
+	display: center;
+	justify-content: center;
+
+}
+
+/* #line
+{
+	margin-left: 25%;
+} */
+
+.card{
+  	height: 220%;
+	width: 24%; /* ? Size - Small (width: 200px), Medium (width: 225px), Large (width: 250px) */
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	margin-left: 35%;
+	box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.1);
+	text-align: center;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	padding-bottom: 3%;
+}
+
+	.card:first-of-type{
+		margin-right: 25px;
+	}
+
+.card_Banner{
+	height: 170px;
+	width: inherit;
+	padding-top: 15%;
+	background-size: cover;
+  	width:100%;
+	background-position: center;
+	padding-bottom: 30%;
+	margin-bottom: 40%;
+}
+
+	.card:nth-child(1) .card_Banner{
+		background-image: url("https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5257b32f41a8a970f1b644c88174cee5&auto=format&fit=crop&w=1352&q=80");
+	}
+
+.card_Avatar{
+	height: 160px;
+	width: 55%;
+	margin-top: 90px;
+	margin-left: 4%;
+	margin-bottom: -50%;
+	border-radius: 100%;
+	margin-top: 6%;
+	background-image: url("image.jpg");
+	background-size: cover;
+	background-position: center;
+	background-color: #F1F1F1;
+	border: 3px solid #FFFFFF;	 
+	box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    }
+
+  /* Detail's styling */
+
+ .team-name
+ {
+ 	font-size: 290%;
+ 	margin-top:-10%; 
+ 	color: #0000FF;
+ 	font-family: roboto, arial;
+ }
+
+ .team-bio
+ {
+ 	font-size: 150%;
+ 	color: #000000;
+ 	padding-left: 5%;
+ 	padding-right: 5%;
+ 	font-style: italic;
+ 	padding-top: 2%;
+ }
+
+ .team-contact
+ {
+ 	margin-top: 5%;
+ 	margin-bottom: -7%;
+ 	border-width: 20px solid #000000;
+ }
+
+ /* icon styling */ 
+ .email-tile
+ {
+ 	border-width: 5px solid #000000;
+ 	padding-right: 3%;
+ 	margin-left: 25%;
+ 	display: inline-block;
+ 	width: 20%;
+
+ }
+
+.phone-tile
+ {
+ 	margin-left: 3%;
+ 	display: inline-block;
+ 	width: 17%;
+ }  
+
+
+
+/* CONTACT US*/
+
+ .contact .info-box {
+  margin-top: 5%;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #e96b56;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #fef5f4;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
